@@ -1,11 +1,11 @@
 import React from "react";
 import Article from "./Article";
 
-export default function Articlelist(props) {
+export default function Articlelist({posts}) {
     return (
         <main>
            {
-            props.posts.map(post => (
+            posts.map(post => (
                 <Article 
                 key = {post.id}
                 title = {post.title}

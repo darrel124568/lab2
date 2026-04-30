@@ -1,12 +1,12 @@
 import React from "react";
 
-export default function(props) {
+export default function({image, about}) {
     return (
         <aside>
             <img 
-            src= {props.image || 'https://via.placeholder.com/215'}  
+            src= {image || 'https://via.placeholder.com/215'}  
             alt="blog logo"  />
-            <p>{props.about}</p>
+            <p>{about}</p>
         </aside>
     )
 }
